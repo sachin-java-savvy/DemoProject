@@ -1,0 +1,31 @@
+RestEndpoint :
+localhost:8080/converter/json
+	Request :
+		sachin,123
+		deepak,12121
+		Nikhil,121
+		
+	Response:
+			{
+		"sachin": "123",
+		"deepak": "12121",
+		"Nikhil": "121"
+	}
+	
+localhost:8080/converter/csv
+		Request :
+			{
+				"id": "1234",
+				"TESMP": "asd" 
+			}
+		Response :
+			id,TESMP
+			1234,asd
+			
+Old Library :
+Input :
+	fname,lastName
+	Sachin,Yewale
+	
+Output:
+	[{fname=Sachin, lastName=Yewale}]
